@@ -1,7 +1,11 @@
 <div class="col-md-12">
     <!-- START SALES BLOCK -->
     <div class="panel panel-default">
+    <div class="btn-group pull-right">
+         <a href="?p=input-data"><button class="btn btn-danger dropdown-toggle"><i class="fa fa-plus-square"></i>Add Data</button></a> 
+        </div>
         <div class="panel-heading">
+
             <div class="panel-title-box">
                 <h3>INI ADALAH DASHBOARD</h3>
                 <span>Sales activity by period you selected</span>
