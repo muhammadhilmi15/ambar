@@ -47,7 +47,7 @@ $kategori=$row['kategori'];
                     <li class="x-navigation-control">
                     </li>
                     <li class="xn-profile">
-                        <a href="#" class="profile-mini">
+                        <a href="index.php" class="profile-mini">
                             <img src="img/ocean.jpg"  alt="John Doe"/>
                         </a>
                         <div class="profile">
@@ -61,8 +61,8 @@ $kategori=$row['kategori'];
                                 <div class="profile-data-title"><?php echo $kategori;?></div>
                             </div>
                             <div class="profile-controls">
-                                <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
-                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                                <!-- <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a> -->
                             </div>
                         </div>
                     </li>
@@ -306,10 +306,10 @@ $kategori=$row['kategori'];
                 <!-- END X-NAVIGATION VERTICAL -->
 
                 <!-- START BREADCRUMB -->
-                <ul class="breadcrumb">
+              <!--   <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li class="active">Dashboard</li>
-                </ul>
+                </ul> -->
                 <!-- END BREADCRUMB -->
 
                 <!-- PAGE CONTENT WRAPPER -->
