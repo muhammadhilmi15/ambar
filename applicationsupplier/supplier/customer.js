@@ -35,8 +35,8 @@ $(document).ready( function ()
         $("#txtid").val("0");
     });
     $(document).on( "click",".btnhapus", function() {
-      var id_cust = $(this).attr("id_cust");
-      var name = $(this).attr("name_cust");
+      var id_cust = $(this).attr("id_supplier");
+      var name = $(this).attr("nama_pemilik");
       swal({   
         title: "Delete Cust?",   
         text: "Delete Cust : "+name+" ?",   
@@ -59,6 +59,7 @@ $(document).ready( function ()
               var data = jQuery.parseJSON(data);
               if(data.result ==1){
                 $.notify('Successfull delete customer');
+                $.notf
                 var table = $('#table_cust').DataTable(); 
                 table.ajax.reload( null, false );
               }else{
@@ -73,6 +74,7 @@ $(document).ready( function ()
           });
         });
     });
+
     $(document).on("click","#btnsave",function(){
       var id_cust = $("#txtid").val();
       var name = $("#txtname").val();
@@ -104,6 +106,7 @@ $(document).ready( function ()
           if(data.crud == 'N'){
             if(data.result == 1){
               $.notify('Successfull save data');
+              
               var table = $('#table_cust').DataTable(); 
               table.ajax.reload( null, false );
               $("#txtname").focus();
@@ -135,29 +138,29 @@ $(document).ready( function ()
         }
       });
     });
-    $(document).on('click','.btn .btn-primary .btnedit',function(e){
-      e.preventDefault();
-      var id_supplier=$(this).attr('id_supplier');
+    $(document).on("click","#btnedit",function(){
+      
+      var id_supplier=$(this).attr("id_supplier");
       var value = {
         id_supplier: id_supplier
       };
       $.ajax(
       {
-        url : 'get_cust.php',
+        url : "get_cust.php",
         type: 'POST',
         data : value,
         success: function(data, textStatus, jqXHR)
         {
           var data = jQuery.parseJSON(data);
-          $('#crudmethod').val("E");
-          $('#txtid').val(data.id_supplier);
-          $('#txtname').val(data.nama_pemilik);
-          $('#cbogender').val(data.alamat);
-          $('#txtcountry').val(data.no_telp_supplier);
-          $('#txtphone').val(data.tanggal_gabung);
+          $('#crudmethod').value("E");
+          $('#txtid').value(data.id_supplier);
+          $('#txtname').value(data.nama_pemilik);
+          $('#cbogender').value(data.alamat);
+          $('#txtcountry').value(data.no_telp_supplier);
+          $('#txtphone').value(data.tanggal_gabung);
           // $('#detailTrip').on('show.bs.modal'
-          $('#modalcust').modal('show');
-          $('#txtname').focus();
+          $("#modalcust").modal('show');
+          
         },
         error: function(jqXHR, textStatus, errorThrown)
         {
@@ -168,4 +171,4 @@ $(document).ready( function ()
     $.notifyDefaults({
       type: 'success',
       delay: 500
-    });
+    });m

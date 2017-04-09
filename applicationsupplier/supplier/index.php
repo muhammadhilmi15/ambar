@@ -425,7 +425,7 @@ function namahari($tanggal){
                                         <div class="col-md-6 col-xs-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                                                <input type="text" class="form-control datepicker" id="txtphone">                                            
+                                                <input type="text" class="form-control datepicker" id="txtphone" >                                            
                                             </div>
                                             <span class="help-block">Click on input field to get datepicker</span>
                                         </div>
@@ -436,7 +436,7 @@ function namahari($tanggal){
                     </div>
                     <div class="modal-footer">
 
-                        <button class="btn btn-primary pull-right">Submit</button>
+                        <button type="submit" class="btn btn-primary pull-right" id="btnsave">Save</button>
                     </div>
                 </div>
             </div>
@@ -452,7 +452,7 @@ function namahari($tanggal){
                                 <div class="panel-heading">                                
                                     <h3 class="panel-title">
                                    
-                                        <button class="btn btn-primary" data-toggle="modal" data-target="#modal_basic"><i class="fa fa-plus"></i> Add Supplier</button>
+                                        <button class="btn btn-primary" id="btnadd"><i class="fa fa-plus"></i> Add Supplier</button>
                                     </h3>
 
                                     <ul class="panel-controls">
@@ -521,7 +521,9 @@ function namahari($tanggal){
         <script type="text/javascript" src="../../js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="../../js/plugins/jquery/jquery-ui.min.js"></script>
         <script type="text/javascript" src="../../js/plugins/bootstrap/bootstrap.min.js"></script> 
-        <script type="text/javascript" src="../../js/plugins/bootstrap/bootstrap-datepicker.js"></script>       
+        <script type="text/javascript" src="../../js/plugins/bootstrap/bootstrap-datepicker.js"></script> 
+        <script src="../../css/sweetalert/sweetalert.min.js"></script>
+        <script src="../../css/bootstrap-notify/bootstrap-notify.min.js"></script>      
         <!-- END PLUGINS -->                
 
         <!-- THIS PAGE PLUGINS -->

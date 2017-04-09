@@ -11,7 +11,7 @@ $i=0;
 foreach ($data as $key) {
 		// add new button
 	$data[$i]['button'] = 
-	'<button type="submit" id_supplier="'.$data[$i]['id_supplier'].'" class="btn btn-primary btnedit" ><i class="fa fa-edit"></i></button> 
+	'<button type="submit" id_supplier="'.$data[$i]['id_supplier'].'" class="btn btn-primary" id="btnedit" data-toggle="modal" name="btnedit"><i class="fa fa-edit" ></i></button> 
 	<button type="submit" id_supplier="'.$data[$i]['id_supplier'].'" nama_pemilik="'.$data[$i]['nama_pemilik'].'" class="btn btn-primary btnhapus" ><i class="glyphicon glyphicon-remove"></i></button>';
 	$i++;
 }
