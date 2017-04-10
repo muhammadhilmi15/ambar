@@ -4,14 +4,12 @@
                             <form class="form-horizontal">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title"><strong>Two Column</strong> Layout</h3>
+                                    <h3 class="panel-title"><strong>Input</strong> Data Trip</h3>
                                     <ul class="panel-controls">
                                         <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
                                     </ul>
                                 </div>
-                                <div class="panel-body">
-                                    <p>This is non libero bibendum, scelerisque arcu id, placerat nunc. Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris. Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem. Phasellus semper felis in odio convallis, et venenatis nisl posuere. Morbi non aliquet magna, a consectetur risus. Vivamus quis tellus eros. Nulla sagittis nisi sit amet orci consectetur laoreet. Vivamus volutpat erat ac vulputate laoreet. Phasellus eu ipsum massa.</p>
-                                </div>
+                                
                                 <div class="panel-body">                                                                        
                                     
                                     <div class="row">
@@ -19,24 +17,24 @@
                                         <div class="col-md-6">
                                             
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label">Text Field</label>
+                                                <label class="col-md-3 control-label">Nama Supir</label>
                                                 <div class="col-md-9">                                            
                                                     <div class="input-group">
-                                                        <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                        <span class="input-group-addon"><span class="fa fa-user"></span></span>
                                                         <input type="text" class="form-control"/>
                                                     </div>                                            
-                                                    <span class="help-block">This is sample of text field</span>
+                                                    <span class="help-block">Ex. John Doe</span>
                                                 </div>
                                             </div>
                                             
                                             <div class="form-group">                                        
-                                                <label class="col-md-3 control-label">Password</label>
+                                                <label class="col-md-3 control-label">No Pol</label>
                                                 <div class="col-md-9 col-xs-12">
                                                     <div class="input-group">
-                                                        <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
-                                                        <input type="password" class="form-control"/>
+                                                        <span class="input-group-addon"><span class="fa fa-truck"></span></span>
+                                                        <input type="text" class="form-control"/>
                                                     </div>            
-                                                    <span class="help-block">Password field sample</span>
+                                                    <span class="help-block">Ex. N 1234 L</span>
                                                 </div>
                                             </div>
                                             
