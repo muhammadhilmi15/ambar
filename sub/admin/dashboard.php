@@ -9,9 +9,7 @@ $bulan2       = mysqli_query($koneksi, "SELECT id_monitor, CONCAT(YEAR(waktu_inp
     <div class="panel panel-default">
      <div class="panel-heading">
             <h3 class="panel-title">Dashboard</h3>
-    <div class="btn-group pull-right">
-         <a href="?p=input-data"><button class="btn btn-danger dropdown-toggle"><i class="fa fa-plus-square"></i>Add Data</button></a> 
-        </div>
+    
         </div>
         
         <div class="panel-body">                                    
@@ -29,7 +27,7 @@ $bulan2       = mysqli_query($koneksi, "SELECT id_monitor, CONCAT(YEAR(waktu_inp
                 data: {
                     labels: [<?php while ($b = mysqli_fetch_array($bulan)) { echo '"' . $b['tahun_bulan'] . '",';}?>],
                     datasets: [{
-                            label: '# Jumlah Trip',
+                            label: '# Jumlah Trip Perbulan untuk Tahun <?php echo date('Y'); ?>',
                             data: [<?php while ($p = mysqli_fetch_array($bulan2)) { echo '"' . $p['jumlah_bulanan'] . '",';}?>],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',

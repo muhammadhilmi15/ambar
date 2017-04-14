@@ -358,16 +358,16 @@ function namahari($tanggal){
                 <!-- END X-NAVIGATION VERTICAL -->                     
                 
                 <!-- START BREADCRUMB -->
-                <ul class="breadcrumb">
+                <!-- <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>                    
                     <li><a href="#">Data Supplier</a></li>
                     <li class="active">Manajemen data supplier</li>
-                </ul>
+                </ul> -->
                 <!-- END BREADCRUMB -->
 
                 <!-- PAGE TITLE -->
                 <div class="page-title">                    
-                    <h2><span class=""></span> Manajemen Supplier</h2   
+                    <h2><span class=""></span> Admin Dashboard</h2   
                 </div>
                 <!-- END PAGE TITLE -->                
 
@@ -549,7 +549,7 @@ function namahari($tanggal){
             });
         </script>
         <script src="customer.js"></script>
-       
+
     </body>
 </html>
 
