@@ -68,7 +68,7 @@ function namahari($tanggal){
             <div class="page-sidebar">
                 <!-- START X-NAVIGATION -->
                 <ul class="x-navigation">
-                    <li class="xn-profile">
+                     <li class="xn-profile">
                         <a href="#" class="profile-mini">
                             <img src="../../assets/images/users/avatar.jpg" alt="John Doe"/>
                         </a>
@@ -374,116 +374,17 @@ function namahari($tanggal){
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
                 
-              
-                 
-                <!-- modal data -->     
-               <div class="modal fade" id="modalcust" role="dialog" aria-labelledby="defModalHead" aria-hidden="true">
-               
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="defModalHead">Tambah Supplier</h4>
-                    </div>
-                    <div class="modal-body">
-                         <form class="form-horizontal">
-                             <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Nama Pemilik</label>
-                                        <div class="col-md-6 col-xs-12">                                            
-                                            <div class="input-group">
-                                            <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                            <input type="text" class="form-control" id="txtname" placeholder="Name">
-                                            <input type="hidden" id="crudmethod" value="N"> 
-                                            <input type="hidden" id="txtid" value="0">
-                                            </div>                                            
-                                            <span class="help-block">Contoh : PT.Perkasa Indah...</span>
-                                        </div>
-                                    </div>
-                                    
-
-
-                                    <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Alamat</label>
-                                        <div class="col-md-6 col-xs-12">                                            
-                                            <textarea class="form-control" rows="5" id="cbogender"></textarea>
-                                            <span class="help-block">Misal : Jalan..</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Nomor Telepon</label>
-                                        <div class="col-md-6 col-xs-12">                                            
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                                <input type="text" class="form-control" id="txtcountry" />
-                                            </div>                                            
-                                            <span class="help-block">Misal : 081...</span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">                                        
-                                        <label class="col-md-3 col-xs-12 control-label">Datepicker</label>
-                                        <div class="col-md-6 col-xs-12">
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                                                <input type="text" class="form-control datepicker" id="txtphone" >                                            
-                                            </div>
-                                            <span class="help-block">Click on input field to get datepicker</span>
-                                        </div>
-                                    </div>
-                         
-                        
-                         </form>
-                    </div>
-                    <div class="modal-footer">
-
-                        <button type="submit" class="btn btn-primary pull-right" id="btnsave">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                
-            
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <!-- START DEFAULT DATATABLE -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">                                
-                                    <h3 class="panel-title">
-                                   
-                                        <button class="btn btn-primary" id="btnadd"><i class="fa fa-plus"></i> Add Supplier</button>
-                                    </h3>
-
-                                    <ul class="panel-controls">
-                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        
-                                    </ul>                                
-                                </div>
-                                <div class="panel-body">
-                                    <table id="table_cust" class="table table-striped table-bordered table-hover">
-                                        <thead>
-                                        <tr class="tableheader">
-                                        <th style="width:40px">#</th>
-                                        <th style="width:140px">Nama Pemilik</th>
-                                        <th style="width:140px">Alamat</th>
-                                        <th style="width:140px">No telepon</th>
-                                        <th style="width:140px">Tanggal Gabung</th>
-                                        <th></th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        </tbody>
-                                        
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- END DEFAULT DATATABLE -->
-                                   
-                        </div>
-                    </div>                                
-                    
+              <div class="row">
+                        <?php
+                        $file="$p.php";
+                        $cek=strlen($p);
+                        if ($cek>30||!file_exists($file)||empty($p)) {
+                            include ("dashboard.php");
+                       } else {
+                           include ($file);
+                       }
+                       ?>
+                   </div>
                 </div>
                 <!-- PAGE CONTENT WRAPPER -->                                
             </div>    
@@ -648,6 +549,7 @@ function namahari($tanggal){
             });
         </script>
         <script src="customer.js"></script>
+       
     </body>
 </html>
 
